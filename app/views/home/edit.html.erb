@@ -1,0 +1,17 @@
+<h1>Home#edit</h1>
+<p>Find me in app/views/home/edit.html.erb</p>
+<form action="/home/update/<%= @postor.id %>" method="POST">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">제목</label>
+    <input type="string" name="title" class="form-control" value="<%= @postor.title %>" id="exampleFormControlInput1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">글쓴이</label></label>
+    <input type="string" name="editor" class="form-control" value="<%= @postor.editor %>" id="exampleFormControlInput1" >
+  </div>
+   <div class="form-group">
+    <label for="exampleFormControlInput1">내용</label>
+    <input type="text" name="content" class="form-control" value="<%= @postor.content %>" id="exampleFormControlInput1" >
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

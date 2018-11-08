@@ -1,0 +1,8 @@
+<h1>Home#show</h1>
+<p>Find me in app/views/home/show.html.erb</p>
+제목:<%= @postor.title %>
+글쓴이:<%= @postor.editor %>
+내용:<%= @postor.content %>
+
+<a href="/home/destroy/<%=@postor.id%>">삭제</a>
+<a href="/home/edit/<%=@postor.id%>">수정</a>

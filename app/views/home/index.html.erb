@@ -1,0 +1,11 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<a href ="/home/new">[글쓰기]</a>
+    <p>제목</p>
+<% @list.each do |s|%>
+    
+    <hr>
+    <a href="/home/show/<%=s.id %>"><%=s.title%></a>
+    <%=s.editor%>
+    
+<%end%>
